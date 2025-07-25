@@ -7,10 +7,10 @@ import {
   protocol,
   tool,
   Usage,
-} from '@openai/agents-core';
-import { RuntimeEventEmitter } from '@openai/agents-core/_shims';
-import { EventEmitterDelegate } from '@openai/agents-core/utils';
-import { z } from '@openai/zod/v3';
+} from '@razroo/agents-core';
+import { RuntimeEventEmitter } from '@razroo/agents-core/_shims';
+import { EventEmitterDelegate } from '@razroo/agents-core/utils';
+import { z } from '@razroo/zod/v3';
 import type {
   RealtimeClientMessage,
   RealtimeSessionConfig,

@@ -1,7 +1,7 @@
 import {
   JsonObjectSchema,
   ModelSettingsToolChoice,
-} from '@openai/agents-core/types';
+} from '@razroo/agents-core/types';
 
 export type RealtimeClientMessage = {
   type: string;

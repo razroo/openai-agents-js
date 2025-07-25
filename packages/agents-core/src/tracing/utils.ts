@@ -1,4 +1,4 @@
-import { randomUUID } from '@openai/agents-core/_shims';
+import { randomUUID } from '../shims/shims';
 
 /**
  * Generate an ISO 8601 timestamp of the current time.

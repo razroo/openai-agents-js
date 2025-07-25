@@ -1,4 +1,4 @@
-import { protocol, Usage } from '@openai/agents-core';
+import { protocol, Usage } from '@razroo/agents-core';
 import { RealtimeBaseItem, RealtimeItem } from './items';
 
 /**

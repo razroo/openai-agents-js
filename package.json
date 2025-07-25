@@ -1,12 +1,12 @@
 {
-  "private": false,
-  "name": "@razroo/agents",
+  "private": true,
+  "name": "openai-agents-js",
   "version": "1.0.0",
   "scripts": {
     "clean": "tsc-multi --clean",
-    "prebuild": "pnpm -F @openai/* -r prebuild",
+    "prebuild": "pnpm -F @razroo/* -r prebuild",
     "build": "tsc-multi",
-    "postbuild": "pnpm -r -F @openai/* bundle",
+    "postbuild": "pnpm -r -F @razroo/* bundle",
     "packages:dev": "tsc-multi --watch",
     "docs:dev": "pnpm -F docs dev",
     "docs:translate": "pnpm -F docs translate",

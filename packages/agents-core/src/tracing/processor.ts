@@ -4,7 +4,7 @@ import logger from '../logger';
 import {
   timer as _timer,
   isTracingLoopRunningByDefault,
-} from '@openai/agents-core/_shims';
+} from '../shims/shims';
 import type { Timeout, Timer } from '../shims/interface';
 import { tracing } from '../config';
 

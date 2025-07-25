@@ -1,4 +1,4 @@
-import { z } from '@openai/zod/v3';
+import { z } from '@razroo/zod/v3';
 
 // ----------------------------
 // Shared base types

@@ -7,12 +7,12 @@ import {
   toolToOpenAI,
   convertHandoffTool,
 } from '../src/openaiChatCompletionsConverter';
-import { protocol, UserError } from '@openai/agents-core';
+import { protocol, UserError } from '@razroo/agents-core';
 import type {
   SerializedFunctionTool,
   SerializedHandoff,
   SerializedTool,
-} from '@openai/agents-core/model';
+} from '@razroo/agents-core/model';
 
 /**
  * Tests around the helpers converting internal protocol structures to the

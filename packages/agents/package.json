@@ -1,5 +1,5 @@
 {
-  "name": "@openai/agents",
+  "name": "@razroo/agents",
   "repository": "https://github.com/openai/openai-agents-js",
   "homepage": "https://openai.github.io/openai-agents-js/",
   "version": "0.0.13",
@@ -39,9 +39,9 @@
     "build-check": "tsc --noEmit -p ./tsconfig.test.json"
   },
   "dependencies": {
-    "@openai/agents-core": "workspace:*",
-    "@openai/agents-openai": "workspace:*",
-    "@openai/agents-realtime": "workspace:*",
+    "@razroo/agents-core": "workspace:*",
+    "@razroo/agents-openai": "workspace:*",
+    "@razroo/agents-realtime": "workspace:*",
     "openai": "^5.10.1",
     "debug": "^4.4.0"
   },
@@ -58,6 +58,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "typesVersions": {
     "*": {
       "realtime": [

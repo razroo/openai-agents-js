@@ -8,7 +8,7 @@ import {
   Usage,
   ModelBehaviorError,
   RunToolApprovalItem,
-} from '@openai/agents-core';
+} from '@razroo/agents-core';
 import * as utils from '../src/utils';
 import type { TransportToolCallEvent } from '../src/transportLayerEvents';
 

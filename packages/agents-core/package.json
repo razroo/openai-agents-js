@@ -1,5 +1,5 @@
 {
-  "name": "@openai/agents-core",
+  "name": "@razroo/agents-core",
   "repository": "https://github.com/openai/openai-agents-js",
   "homepage": "https://openai.github.io/openai-agents-js/",
   "version": "0.0.13",
@@ -125,5 +125,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

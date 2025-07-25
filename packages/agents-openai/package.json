@@ -1,5 +1,5 @@
 {
-  "name": "@openai/agents-openai",
+  "name": "@razroo/agents-openai",
   "repository": "https://github.com/openai/openai-agents-js",
   "homepage": "https://openai.github.io/openai-agents-js/",
   "version": "0.0.13",
@@ -18,8 +18,8 @@
     }
   },
   "dependencies": {
-    "@openai/agents-core": "workspace:*",
-    "@openai/zod": "npm:zod@3.25.40 - 3.25.67",
+    "@razroo/agents-core": "workspace:*",
+    "@razroo/zod": "npm:zod@3.25.40 - 3.25.67",
     "debug": "^4.4.0",
     "openai": "^5.10.1"
   },
@@ -41,5 +41,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

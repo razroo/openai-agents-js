@@ -1,7 +1,7 @@
 import { addTraceProcessor } from './tracing';
 import { defaultProcessor } from './tracing/processor';
 
-export { RuntimeEventEmitter } from '@openai/agents-core/_shims';
+export { RuntimeEventEmitter } from './shims/shims';
 export {
   Agent,
   AgentConfiguration,

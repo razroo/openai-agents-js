@@ -3,11 +3,11 @@ import { UserError } from './errors';
 import {
   MCPServerStdio as UnderlyingMCPServerStdio,
   MCPServerStreamableHttp as UnderlyingMCPServerStreamableHttp,
-} from '@openai/agents-core/_shims';
+} from './shims/shims';
 import { getCurrentSpan, withMCPListToolsSpan } from './tracing';
 import { logger as globalLogger, getLogger, Logger } from './logger';
 import debug from 'debug';
-import { z } from '@openai/zod/v3';
+import { z } from '@razroo/zod/v3';
 import {
   JsonObjectSchema,
   JsonObjectSchemaNonStrict,

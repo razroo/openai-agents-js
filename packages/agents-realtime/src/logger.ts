@@ -1,4 +1,4 @@
-import { getLogger } from '@openai/agents-core';
+import { getLogger } from '@razroo/agents-core';
 
 const logger = getLogger('openai-agents:realtime');
 
