@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "@razroo/openai-agents-js",
+  "name": "@razroo/agents",
   "version": "0.0.1",
   "scripts": {
     "clean": "tsc-multi --clean",
