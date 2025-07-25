@@ -1,6 +1,6 @@
 {
-  "private": true,
-  "name": "openai-agents-js",
+  "private": false,
+  "name": "@razroo/openai-agents-js",
   "version": "0.0.1",
   "scripts": {
     "clean": "tsc-multi --clean",
@@ -38,7 +38,6 @@
     "examples:tools-file-search": "pnpm -F tools start:file-search",
     "examples:tools-web-search": "pnpm -F tools start:web-search",
     "ci:publish": "pnpm publish -r --no-git-checks",
-    "prepare": "husky",
     "clear:deps": "rm -rf node_modules && pnpm -r exec rm -rf node_modules",
     "local-npm:reset": "rm -rf .cache/verdaccio/storage",
     "local-npm:start": "verdaccio --config verdaccio-config.yml",
@@ -56,7 +55,6 @@
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-unused-imports": "^4.1.4",
     "execa": "^9.6.0",
-    "husky": "^9.1.7",
     "playwright": "^1.54.0",
     "prettier": "^3.6.2",
     "rimraf": "^6.0.1",
