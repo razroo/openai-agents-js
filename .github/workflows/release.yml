@@ -21,8 +21,20 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
           
+      - name: Create build workspace config
+        run: |
+          cat > pnpm-workspace-build.yaml << EOF
+          packages:
+            - "packages/*"
+          EOF
+          
       - name: Install dependencies and build 🔧
-        run: pnpm install --no-frozen-lockfile --filter='@openai/agents-core' --filter='@openai/agents-extensions' --filter='@openai/agents-openai' --filter='@openai/agents-realtime' --filter='@razroo/openai-agents-js' && pnpm --filter='@openai/agents-core' --filter='@openai/agents-extensions' --filter='@openai/agents-openai' --filter='@openai/agents-realtime' --filter='@razroo/openai-agents-js' build
+        run: |
+          mv pnpm-workspace.yaml pnpm-workspace-original.yaml
+          mv pnpm-workspace-build.yaml pnpm-workspace.yaml
+          pnpm install --no-frozen-lockfile && pnpm build
+          mv pnpm-workspace.yaml pnpm-workspace-build.yaml
+          mv pnpm-workspace-original.yaml pnpm-workspace.yaml
         
       - name: Publish package on NPM 📦
         run: pnpm ci:publish
