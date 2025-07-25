@@ -25,8 +25,8 @@ import {
   UserError,
   withGenerationSpan,
   getLogger,
-} from '@openai/agents';
-import { isZodObject } from '@openai/agents/utils';
+} from '@razroo/agents';
+import { isZodObject } from '@razroo/agents/utils';
 
 /**
  * @internal
@@ -351,7 +351,7 @@ export function getResponseFormat(
  * If tracing is enabled, the model will send generation spans to your traces processor.
  *
  * ```ts
- * import { aisdk } from '@openai/agents-extensions';
+ * import { aisdk } from '@razroo/agents-extensions';
  * import { openai } from '@ai-sdk/openai';
  *
  * const model = aisdk(openai('gpt-4o'));
@@ -771,7 +771,7 @@ export class AiSdkModel implements Model {
  * If tracing is enabled, the model will send generation spans to your traces processor.
  *
  * ```ts
- * import { aisdk } from '@openai/agents-extensions';
+ * import { aisdk } from '@razroo/agents-extensions';
  * import { openai } from '@ai-sdk/openai';
  *
  * const model = aisdk(openai('gpt-4o'));
