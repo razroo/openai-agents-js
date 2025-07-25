@@ -1,5 +1,5 @@
 {
-  "name": "@razroo/openai-agents-js",
+  "name": "@openai/agents",
   "repository": "https://github.com/openai/openai-agents-js",
   "homepage": "https://openai.github.io/openai-agents-js/",
   "version": "0.0.13",

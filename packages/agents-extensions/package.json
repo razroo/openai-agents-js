@@ -29,7 +29,7 @@
     }
   },
   "peerDependencies": {
-    "@razroo/openai-agents-js": "workspace:*",
+    "@openai/agents": "workspace:*",
     "ws": "^8.18.1"
   },
   "keywords": [
@@ -40,7 +40,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@razroo/openai-agents-js": "workspace:*",
+    "@openai/agents": "workspace:*",
     "@types/debug": "^4.1.12",
     "ws": "^8.18.1"
   },
