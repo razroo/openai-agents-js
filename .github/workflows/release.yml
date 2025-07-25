@@ -22,7 +22,7 @@ jobs:
           cache: 'pnpm'
           
       - name: Install dependencies and build 🔧
-        run: pnpm install --no-frozen-lockfile --filter='./packages/*' && pnpm --filter='./packages/*' build
+        run: pnpm install --no-frozen-lockfile --filter='@openai/agents-core' --filter='@openai/agents-extensions' --filter='@openai/agents-openai' --filter='@openai/agents-realtime' --filter='@razroo/openai-agents-js' && pnpm --filter='@openai/agents-core' --filter='@openai/agents-extensions' --filter='@openai/agents-openai' --filter='@openai/agents-realtime' --filter='@razroo/openai-agents-js' build
         
       - name: Publish package on NPM 📦
         run: pnpm ci:publish
