@@ -1,5 +1,11 @@
 # @openai/agents-core
 
+## 0.0.14
+
+### Patch Changes
+
+- fba44d9: Fix #246 by exposing RunHandoffOutputItem type
+
 ## 0.0.13
 
 ### Patch Changes
