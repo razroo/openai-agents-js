@@ -22,7 +22,7 @@ jobs:
           cache: 'pnpm'
           
       - name: Install dependencies and build 🔧
-        run: pnpm install --no-frozen-lockfile --filter='!docs' && pnpm --filter='!docs' build
+        run: pnpm install --no-frozen-lockfile --filter='!docs' --filter='!examples/*' && pnpm --filter='!docs' --filter='!examples/*' build
         
       - name: Publish package on NPM 📦
         run: pnpm ci:publish
