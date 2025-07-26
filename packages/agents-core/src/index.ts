@@ -67,6 +67,7 @@ export {
 } from './items';
 export { AgentHooks } from './lifecycle';
 export { getLogger } from './logger';
+export { loadEnv } from './config';
 export {
   getAllMcpTools,
   invalidateServerToolsCache,
